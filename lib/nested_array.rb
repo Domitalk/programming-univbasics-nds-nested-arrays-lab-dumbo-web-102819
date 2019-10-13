@@ -39,6 +39,11 @@ def assembled_matrix
 end
 
 def array_literal_matrix
+  new_array = assembled_matrix
+  new_array.each do |nested|
+    nested.sort
+  end
+  new_array
   # Using Array literal syntax only, build a nested array that uses the data in
   # side the ENNET_HOUSE and ENFIELD_TENNIS_ACADEMY Arrays but sorts
   # alphabetically by the first character.
