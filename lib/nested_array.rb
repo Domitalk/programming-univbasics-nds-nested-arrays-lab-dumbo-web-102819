@@ -55,6 +55,10 @@ def array_literal_matrix
       "Michael Pemulis"
     ]
   ]
+  new_array.each do |array|
+    array.sort
+  end
+  new_array
   # Using Array literal syntax only, build a nested array that uses the data in
   # side the ENNET_HOUSE and ENFIELD_TENNIS_ACADEMY Arrays but sorts
   # alphabetically by the first character.
